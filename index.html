@@ -4,115 +4,331 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tribus Groenadvies</title>
-  <meta name="description" content="One pager website voor een bedrijf met intro, doelen, contactinfo en footer." />
+  <meta
+    name="description"
+    content="Tribus Groenadvies helpt met duurzaam groenbeheer, bodemadvies en boomzorg."
+  />
 
-  <!-- Bootstrap -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
-
-  <!-- Eigen CSS -->
-  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="stylesheet" href="CSS/styles.css" />
 </head>
-
 <body>
-  <header class="hero">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-
-        <!-- Intro -->
-        <div class="col-lg-8">
-          <div class="hero-card p-4 p-md-5 text-center">
-            <h1 class="display-5 fw-bold mb-3">Tribus Groenadvies</h1>
-            <p class="lead mb-0">
-              Wij helpen klanten met duurzame, betrouwbare en doelgerichte oplossingen.
-              Onze focus ligt op kwaliteit, duidelijke communicatie en een aanpak die
-              resultaat oplevert.
-            </p>
-          </div>
-        </div>
-
-        <!-- Aside -->
-        <aside class="col-lg-4">
-          <div class="contact-card p-4">
-            <h2 class="h4 section-title mb-3">Contactgegevens</h2>
-
-            <p><strong>Adres:</strong><br>Voorbeeldstraat 12</p>
-            <p><strong>Telefoon:</strong><br>+32 470 00 00 00</p>
-            <p><strong>E-mail:</strong><br>info@bedrijf.be</p>
-
-            <h3 class="h5 section-title mt-4">Socials</h3>
-            <div class="d-flex flex-column gap-2">
-              <a class="social-link" href="#">Facebook</a>
-              <a class="social-link" href="https://www.instagram.com/tribus.groenbeheer/">Instagram</a>
-              <a class="social-link" href="#">LinkedIn</a>
-            </div>
-          </div>
-        </aside>
-
-      </div>
-    </div>
-  </header>
-
   <main>
-    <section class="goal-section">
+    <section class="hero-section">
       <div class="container">
+        <div class="hero-shell">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-8">
+              <div class="intro-card h-100">
+                <div class="leaf-watermark" aria-hidden="true">
+                  <i class="bi bi-flower1"></i>
+                </div>
 
-        <div class="text-center mb-5">
-          <h2 class="section-title">Onze doelen</h2>
-        </div>
+                <div class="intro-content text-center">
+                  <h1>Tribus Groenadvies</h1>
 
-        <!-- Doel 1 -->
-        <div class="row g-4 align-items-center mb-4">
-          <div class="col-lg-6">
-            <div class="goal-card">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+                  <div class="title-divider">
+                    <span></span>
+                    <i class="bi bi-flower1"></i>
+                    <span></span>
+                  </div>
+
+                  <p class="intro-text">
+                    Wij helpen klanten met duurzame, betrouwbare en doelgerichte
+                    oplossingen. Onze focus ligt op kwaliteit, duidelijke communicatie
+                    en een aanpak die resultaat oplevert.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <h3>Doel 1</h3>
-            <p>Samenwerking en klantgericht werken.</p>
+
+            <aside class="col-lg-4">
+              <div class="contact-panel h-100">
+                <div class="contact-panel-header">
+                  <h2>Contactgegevens</h2>
+                </div>
+
+                <div class="contact-panel-body">
+                  <ul class="contact-list">
+                    <li>
+                      <i class="bi bi-geo-alt-fill"></i>
+                      <div>
+                        <span>Voorbeeldstraat 12</span>
+                        <span>1234 AB Voorbeeldstad</span>
+                      </div>
+                    </li>
+
+                    <li>
+                      <i class="bi bi-telephone-fill"></i>
+                      <div>
+                        <a href="tel:+32473102001">+32 473 10 20 01</a>
+                      </div>
+                    </li>
+
+                    <li>
+                      <i class="bi bi-envelope-fill"></i>
+                      <div>
+                        <a href="mailto:info@bedrijf.be">info@bedrijf.be</a>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="social-block">
+                    <h3>Volg ons</h3>
+
+                    <ul class="social-list">
+                      <li>
+                        <a href="https://www.instagram.com/tribus.groenbeheer/" target="_blank" rel="noopener noreferrer">
+                          <i class="bi bi-instagram"></i>
+                          <span>Instagram</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="bi bi-facebook"></i>
+                          <span>Facebook</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="bi bi-linkedin"></i>
+                          <span>LinkedIn</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Doel 2 (omgekeerd) -->
-        <div class="row g-4 align-items-center mb-4 flex-lg-row-reverse">
-          <div class="col-lg-6">
-            <div class="goal-card">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="">
+    <section class="goals-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Onze doelen</h2>
+          <span class="heading-line"></span>
+        </div>
+
+        <div class="goals-stack">
+          <article class="goal-card">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-4">
+                <div class="goal-image-wrap">
+                  <img src="assets/droogtebestrijding.jpg" alt="Droogtebestrijding" />
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="goal-content">
+                  <h3>1. Droogtebestrijding begint nu!</h3>
+                  <p>
+                    Het bestrijden van droogte begint bij het bewerken van de bodem of het
+                    aanplanten op zich. Een gezonde bodem is beter bestand tegen droogte.
+                    Belangrijk hierbij is dat de verhoudingen tussen aarde, water en lucht
+                    zo optimaal mogelijk zijn.
+                  </p>
+                  <p>
+                    Als dit niet zo is, dan zijn er niet-invasieve methodes om de bodem of
+                    groeiplaats te optimaliseren met een minimum aan verstoring. Beperk
+                    bodembewerking en voorkom structuurbederf en verstoring van het
+                    bodemleven.
+                  </p>
+                  <p>
+                    Houd gedurende het jaar met de gepaste bodemverbeteraar het gehalte
+                    aan organische stof op peil en voorkom uitdroging van de toplaag door
+                    het aanbrengen van een aangepaste mulchlaag.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <h3>Doel 2</h3>
-            <p>Innovatie en groei stimuleren.</p>
-          </div>
-        </div>
+          </article>
 
-        <!-- Doel 3 -->
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-6">
-            <div class="goal-card">
-              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="">
+          <article class="goal-card reverse">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-8">
+                <div class="goal-content">
+                  <h3>2. Voorkom droogtestress!</h3>
+                  <p>
+                    De voorjaarszon kan bij nieuwe aanplant zorgen voor droogtestress
+                    waardoor de plant stopt met groeien of zelfs afsterft. Omdat de wortels
+                    van nieuwe planten nog niet volledig hersteld zijn, verdampen ze meer
+                    water dan ze opnemen.
+                  </p>
+                  <p>
+                    Overmatig water geven kan leiden tot structuurbederf van de bodem. Er
+                    bestaan verschillende eenvoudig toe te passen methodes om het water in
+                    zowel de bodem als plant te conserveren en de watergift te beperken.
+                  </p>
+                  <p>
+                    Een gezonde bodem laat water afvloeien naar diepere grondlagen, maar
+                    behoudt voldoende vocht voor beplanting tijdens droge periodes. Een
+                    stabiele vochtigheidsgraad voorkomt verstoring van groei.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="goal-image-wrap">
+                  <img src="assets/droogtestress.jpg" alt="Voorkom droogtestress" />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <h3>Doel 3</h3>
-            <p>Kwaliteit en vertrouwen opbouwen.</p>
-          </div>
-        </div>
+          </article>
 
+          <article class="goal-card">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-4">
+                <div class="goal-image-wrap">
+                  <img src="assets/bodemleven.jpg" alt="Bodemleven houdt de grond gezond" />
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="goal-content">
+                  <h3>3. Bodemleven houdt de grond gezond!</h3>
+                  <p>
+                    Een gezonde bodem zit vol leven, organisch materiaal en mineralen wat
+                    leidt tot gezonde planten die beter bestand zijn tegen ziektes en
+                    droogte. Bodemleven zet organisch materiaal om in voedingsstoffen voor
+                    planten en onderhoudt op een natuurlijke manier een gezonde
+                    bodemstructuur.
+                  </p>
+                  <p>
+                    Stagnerend water en conditieverlies van planten zijn enkele indicaties
+                    van een slechte bodemstructuur en weinig bodemleven. Het bodemleven kan
+                    gestimuleerd worden door de bodem op een niet-invasieve wijze te
+                    beluchten en te ondersteunen met geschikte toevoegingen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="goal-card reverse">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-8">
+                <div class="goal-content">
+                  <h3>4. Monumentale bomen!</h3>
+                  <p>
+                    Oude bomen en struiken hebben vaak te lijden onder veranderende
+                    klimaatomstandigheden. Extreme droogte of wateroverlast zijn nefast voor
+                    de bodemstructuur, met verdichting of dichtslippen van de bodem tot
+                    gevolg.
+                  </p>
+                  <p>
+                    In beide gevallen daalt het zuurstofgehalte in de bodem waardoor
+                    haarwortels afsterven, opname van water en voedingsstoffen vermindert
+                    en de conditie van de boom of plant achteruitgaat.
+                  </p>
+                  <p>
+                    Tribus kan helpen bij het evalueren van conditie en veiligheid van
+                    bomen door middel van visuele boomcontrole of VTA, en indien nodig een
+                    plan van opvolging opstellen.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="goal-image-wrap">
+                  <img src="assets/monumentaleboom.jpg" alt="Monumentale bomen" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="goal-card">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-4">
+                <div class="goal-image-wrap">
+                  <img src="assets/algemeenonderhoudt.jpg" alt="Algemeen tuinonderhoud" />
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="goal-content">
+                  <h3>5. Algemeen tuinonderhoud</h3>
+                  <p>
+                    Het is de bedoeling dat een aangelegde tuin jaarlijks mooier wordt en
+                    dat men uiteindelijk het resultaat bereikt dat de ontwerper voor ogen
+                    had. Om ervoor te zorgen dat dit mogelijk is kan je rekenen op een
+                    tuinaannemer, maar je kan ook zelf aan de slag.
+                  </p>
+                  <p>
+                    Met een beheerplan heb je een leidraad in de hand waarmee je perfect
+                    kan bepalen wat je zelf wil uitvoeren en wat je wil uitbesteden. Het
+                    geeft je ook de mogelijkheid om werken tijdig in te plannen en op te
+                    volgen.
+                  </p>
+                  <p>
+                    Tribus werkt samen met verscheidene tuinaannemers en boomverzorgers,
+                    maar is aan geen enkele firma gebonden.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container text-center">
-      <p>&copy; 2026 Bedrijfsnaam</p>
-      <p>
-        <a href="#">Privacy</a> |
-        <a href="#">Voorwaarden</a>
-      </p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="footer-brand">
+              <div class="footer-brand-title">
+                <i class="bi bi-flower1"></i>
+                <span>Tribus Groenadvies</span>
+              </div>
+              <p>
+                Duurzaam advies voor een gezonde bodem, sterke bomen en mooie tuinen.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="footer-block">
+              <h3>Snelle links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Onze doelen</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="footer-block">
+              <h3>Contact</h3>
+              <ul class="footer-contact">
+                <li><i class="bi bi-telephone-fill"></i> <a href="tel:+32473102001">+32 473 10 20 01</a></li>
+                <li><i class="bi bi-envelope-fill"></i> <a href="mailto:info@bedrijf.be">info@bedrijf.be</a></li>
+              </ul>
+
+              <div class="footer-socials">
+                <a href="https://www.instagram.com/tribus.groenbeheer/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Tribus Groenadvies – Alle rechten voorbehouden.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacybeleid</a>
+          <a href="#">Algemene voorwaarden</a>
+        </div>
+      </div>
     </div>
   </footer>
 
